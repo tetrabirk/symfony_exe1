@@ -15,10 +15,13 @@ class News
     private $image;
     private $titre;
     private $texte;
+    private $href;
 
-    public function __construct(array $data)){
-        $this->hydrate($data);
-    }
+
+
+//    public function __construct(array $data){
+//        $this->hydrate($data);
+//    }
 
     public function hydrate(array $data){
         foreach ($data as $key => $value){
@@ -93,5 +96,20 @@ class News
         $this->texte = $texte;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getHref()
+    {
+        return $this->href;
+    }
+
+    /**
+     * @param mixed $href
+     */
+    public function setHref($href)
+    {
+        $this->href = $href;
+    }
 
 }

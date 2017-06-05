@@ -5,6 +5,7 @@ namespace Birk\NewsBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Birk\NewsBundle\Manager\NewsManager;
 
 class NewsController extends Controller
 {
@@ -14,21 +15,11 @@ class NewsController extends Controller
      */
     public function homeAction()
     {
-        $news = [
-            ['image'=>'http://www.placecage.com/c/185/185','titre'=>'ceci est un titre', 'texte'=>'blablabla','href'=>'#'],
-            ['image'=>'http://www.placecage.com/c/185/185','titre'=>'ceci est un titre', 'texte'=>'blablabla','href'=>'#'],
-            ['image'=>'http://www.placecage.com/c/185/185','titre'=>'ceci est un titre', 'texte'=>'blablabla','href'=>'#'],
-            ['image'=>'http://www.placecage.com/c/185/185','titre'=>'ceci est un titre', 'texte'=>'blablabla','href'=>'#'],
-            ['image'=>'http://www.placecage.com/c/185/185','titre'=>'ceci est un titre', 'texte'=>'blablabla','href'=>'#'],
-            ['image'=>'http://www.placecage.com/c/185/185','titre'=>'ceci est un titre', 'texte'=>'blablabla','href'=>'#'],
-            ['image'=>'http://www.placecage.com/c/185/185','titre'=>'ceci est un titre', 'texte'=>'blablabla','href'=>'#'],
-            ['image'=>'http://www.placecage.com/c/185/185','titre'=>'ceci est un titre', 'texte'=>'blablabla','href'=>'#'],
-            ['image'=>'http://www.placecage.com/c/185/185','titre'=>'ceci est un titre', 'texte'=>'blablabla','href'=>'#'],
-
-        ];
+        $newsManager = new NewsManager();
+        $news = $newsManager->create(5);
         dump($news);
         $content = $this
-            ->renderView('BirkNewsBundle:News:home.html.twig',['news'=>$news]);
+            ->renderView('BirkNewsBundle:News:newsAll.html.twig',['news'=>$news]);
         return new Response($content);
     }
     /**

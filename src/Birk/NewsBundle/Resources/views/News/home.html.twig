@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Super Site de News</title>
-        <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-<main>
-    <div id="header">
-        "Ké novel?"
-    </div>
-    <div id="news_conteneur">
-        {% for n in news %}
-            <div id="news"><img src="{{ n.image }}"><h2>{{ n.titre }}</h2><p>{{ n.texte }}</p><a href="{{ n.href }}">lire la suite</a></div>
-        {% endfor %}
-    </div>
-</main>
-</body>
-</html>
+{% extends "@BirkNews/base.html.twig" %}
 
+{% block title %}Home{% endblock %}
+
+{% block body %}
+    <main>
+        <div id="header">
+            "Ké novel?"
+        </div>
+
+            <div id="news_conteneur">
+                {% block content %}
+
+                {% endblock %}
+            </div>
+    </main>
+{% endblock %}

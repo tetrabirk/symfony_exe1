@@ -37,6 +37,10 @@ framework:
 twig:
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
+    #...
+    paths:
+        '%kernel.project_dir%/src/Birk/NewsBundle/Resources/views/News': BirkNews
+
 
 # Doctrine Configuration
 doctrine:
