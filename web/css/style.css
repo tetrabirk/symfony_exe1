@@ -26,7 +26,7 @@ main{
     justify-content: flex-start;
 
 }
-#news{
+#news, #news1{
     color: gray;
     font-size: 12px;
     border: 15px solid blue;
@@ -44,7 +44,27 @@ main{
 #news a{
     color: orange;
 }
-#news h2{
+#news h2, , #news1 h2{
     font-weight: bold;
     font-size: 14px;
+}
+#news1 {
+    width: 100%;
+    text-align: center;
+    margin-right: 0px;
+
+}
+#news1 img{
+    width: 370;
+    height: 370px;
+
+}
+#back{
+    background-color: yellow;
+    margin: 0 auto;
+    width: 100px;
+    padding: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
 }

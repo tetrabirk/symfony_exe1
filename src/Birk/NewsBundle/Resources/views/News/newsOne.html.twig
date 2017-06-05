@@ -1,0 +1,13 @@
+{% extends "@BirkNews/home.html.twig" %}
+
+{% block title %}Article{% endblock %}
+
+
+{% block content %}
+    <div id="news1">
+        <img src="{{ news.image }}">
+        <h2>{{ news.titre }}</h2>
+        <p>{{ news.texte }}</p>
+    </div>
+    <a id="back" href="/home">BACK</a>
+{% endblock %}
