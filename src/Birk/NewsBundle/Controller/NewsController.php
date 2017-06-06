@@ -7,11 +7,6 @@ use Symfony\Component\HttpFoundation\Response;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Birk\NewsBundle\Manager\NewsManager;
 
-//problemes rencontré:
-//  -je ne sais pas comment faire un lien relatif pour le css du coup j'ai du tricher et utiliser "/home" au lieu de '/'
-//  -je ne sais pas comment utiliser les routes pour générer un href
-//
-//
 
 
 class NewsController extends Controller
@@ -27,7 +22,7 @@ class NewsController extends Controller
 //    public $newsManager = new NewsManager();
 //    public $news = ;
     /**
-     * @Route("/home")
+     * @Route("/")
      * name="home"
      */
     public function homeAction()
@@ -39,7 +34,7 @@ class NewsController extends Controller
     }
     /**
      * @Route("/news/{id}")
-     * name="newsDetail"
+     * name="newsdetail"
      * requirements={'id':"\d+"}
      */
 

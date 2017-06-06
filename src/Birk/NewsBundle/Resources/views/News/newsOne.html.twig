@@ -9,5 +9,5 @@
         <h2>{{ news.titre }}</h2>
         <p>{{ news.texte }}</p>
     </div>
-    <a id="back" href="/home">BACK</a>
+    <a id="back" href={{ path("birk_news_news_home")}} >BACK</a>
 {% endblock %}

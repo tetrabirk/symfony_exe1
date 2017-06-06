@@ -7,7 +7,7 @@
             <img src="{{ n.image }}">
             <h2>{{ n.titre }}</h2>
             <p>{{ n.texte }}</p>
-            <a href="{{ n.href }}">lire la suite</a>
+            <a href="{{ path('birk_news_news_newsdetail')~'/'~n.id}}">lire la suite</a>
         </div>
     {% endfor %}
 
