@@ -5,31 +5,25 @@ namespace Birk\NewsBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Birk\NewsBundle\Manager\NewsManager;
+use Birk\NewsBundle\Entity\Generator;
+use Symfony\Component\HttpFoundation\Request;
 
 
 
 class NewsController extends Controller
 {
-    private $newsManager;
-    private $news;
 
-    function __construct()
-    {
-        $this->setNewsManager();
-        $this->setNews(12);
-    }
-//    public $newsManager = new NewsManager();
-//    public $news = ;
     /**
      * @Route("/")
      * name="home"
      */
     public function homeAction()
-    {
+    {   $doctrine = $this->getDoctrine();
+        $repo = $doctrine->getRepository('BirkNewsBundle:News');
+        $allNews = $repo->findAll();
+        $content =$this
+            ->renderView('BirkNewsBundle:News:newsAll.html.twig',['news'=>$allNews]);
 
-        $content = $this
-            ->renderView('BirkNewsBundle:News:newsAll.html.twig',['news'=>$this->news]);
         return new Response($content);
     }
     /**
@@ -40,10 +34,11 @@ class NewsController extends Controller
 
     public function newsDetailAction($id=0){
         if ($id!==0){
-            $news = $this->getNews();
+            $doctrine = $this->getDoctrine();
+            $repo = $doctrine->getRepository('BirkNewsBundle:News');
+            $news = $repo->find($id);
             $content = $this
-                ->renderView('BirkNewsBundle:News:newsOne.html.twig',['news'=>$news[$id]]);
-            dump($news[$id]);
+                ->renderView('BirkNewsBundle:News:newsOne.html.twig',['news'=>$news]);
             return new Response($content);
         }else{
             return new Response('404');
@@ -52,35 +47,30 @@ class NewsController extends Controller
     }
 
     /**
-     * @return mixed
+     * @Route("/addnewstest")
+     * name="addnewstest"
+     *
      */
-    public function getNewsManager()
-    {
-        return $this->newsManager;
-    }
+    public function createNewstest(Request $request){
+        $generateur = new Generator();
+        $news = $generateur->createNews();
 
-    /**
-     * @param mixed $newsManager
-     */
-    public function setNewsManager()
-    {
-        $this->newsManager = new NewsManager();
-    }
+        $doctrine = $this->getDoctrine();
 
-    /**
-     * @return mixed
-     */
-    public function getNews()
-    {
-        return $this->news;
-    }
+        $em=$doctrine->getManager();
+        $em->persist($news);
+        $em->flush();
 
-    /**
-     * @param mixed $news
-     */
-    public function setNews($nbre)
-    {
-        $this->news = $this->newsManager->create(12);
+        $this->addFlash('notice','nouvelle news');
+
+        $repo = $doctrine->getRepository('BirkNewsBundle:News');
+        $allNews = $repo->findAll();
+        $content =$this
+            ->renderView('BirkNewsBundle:News:newsAll.html.twig',['news'=>$allNews]);
+        return new Response($content);
+
+
+
     }
 
 

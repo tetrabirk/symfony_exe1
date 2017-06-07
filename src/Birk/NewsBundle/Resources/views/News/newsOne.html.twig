@@ -5,9 +5,9 @@
 
 {% block content %}
     <div id="news1">
-        <img src="{{ news.image }}">
+        <img src="{{ news.imageUrl }}">
         <h2>{{ news.titre }}</h2>
-        <p>{{ news.texte }}</p>
+        <p>{{ news.contenu }}</p>
     </div>
     <a id="back" href={{ path("birk_news_news_home")}} >BACK</a>
 {% endblock %}

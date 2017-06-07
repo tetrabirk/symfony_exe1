@@ -2,6 +2,7 @@
 
 namespace Birk\NewsBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -48,13 +49,18 @@ class Auteur
      * @ORM\Column(name="bio", type="text", nullable=true)
      */
     private $bio;
-
-
+//
+//    /**
+//     * @var ArrayCollection
+//     * @ORM\OneToMany(targetEntity="\Birk\NewsBundle\Entity\News, inversedBy='auteur')
+//     */
+//    private $News;
     /**
      * Get id
      *
      * @return int
      */
+
     public function getId()
     {
         return $this->id;

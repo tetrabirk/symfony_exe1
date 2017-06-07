@@ -2,6 +2,7 @@
 
 namespace Birk\NewsBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -12,6 +13,11 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class News
 {
+    public function __construct($data){
+        $this->hydrate($data);
+//        $this->auteur = new ArrayCollection();
+    }
+
     /**
      * @var int
      *
@@ -49,6 +55,20 @@ class News
      */
     private $datePublication;
 
+//    /**
+//     * @var ArrayCollection
+//     * @ORM\ManyToOne(targetEntity="\Birk\NewsBundle\Entity\Auteur", mappedBy='auteur")
+//     */
+//    private $auteur;
+
+    public function hydrate($data){
+        foreach ($data as $key => $value){
+            $nomMethode = "set".ucfirst($key);
+            if (method_exists($this,$nomMethode)){
+                $this->$nomMethode($value);
+            }
+        }
+    }
 
     /**
      * Get id
@@ -141,7 +161,11 @@ class News
      */
     public function setDatePublication($datePublication)
     {
-        $this->datePublication = $datePublication;
+        if (isset($datePublication)){
+            $this->datePublication = $datePublication;
+        }else{
+            $this->datePublication = new \DateTime();
+        }
 
         return $this;
     }
