@@ -1,39 +1,59 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Ludovic
- * Date: 5/06/2017
- * Time: 14:14
- */
 
 namespace Birk\NewsBundle\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
 
+/**
+ * News
+ *
+ * @ORM\Table(name="news")
+ * @ORM\Entity(repositoryClass="Birk\NewsBundle\Repository\NewsRepository")
+ */
 class News
 {
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
     private $id;
-    private $image;
-    private $titre;
-    private $texte;
-    private $href;
-
-
-
-//    public function __construct(array $data){
-//        $this->hydrate($data);
-//    }
-
-    public function hydrate(array $data){
-        foreach ($data as $key => $value){
-            $nomMethode = "set".ucfirst($key);
-            if (method_exists($this,$nomMethode)){
-                $this->$nomMethode($value);
-            }
-        }
-    }
 
     /**
-     * @return mixed
+     * @var string
+     *
+     * @ORM\Column(name="titre", type="string", length=255)
+     */
+    private $titre;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="contenu", type="text")
+     */
+    private $contenu;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="image_url", type="string", length=255, nullable=true)
+     */
+    private $imageUrl;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_publication", type="datetimetz")
+     */
+    private $datePublication;
+
+
+    /**
+     * Get id
+     *
+     * @return int
      */
     public function getId()
     {
@@ -41,31 +61,23 @@ class News
     }
 
     /**
-     * @param mixed $id
+     * Set titre
+     *
+     * @param string $titre
+     *
+     * @return News
      */
-    public function setId($id)
+    public function setTitre($titre)
     {
-        $this->id = $id;
+        $this->titre = $titre;
+
+        return $this;
     }
 
     /**
-     * @return mixed
-     */
-    public function getImage()
-    {
-        return $this->image;
-    }
-
-    /**
-     * @param mixed $image
-     */
-    public function setImage($image)
-    {
-        $this->image = $image;
-    }
-
-    /**
-     * @return mixed
+     * Get titre
+     *
+     * @return string
      */
     public function getTitre()
     {
@@ -73,43 +85,75 @@ class News
     }
 
     /**
-     * @param mixed $titre
+     * Set contenu
+     *
+     * @param string $contenu
+     *
+     * @return News
      */
-    public function setTitre($titre)
+    public function setContenu($contenu)
     {
-        $this->titre = $titre;
+        $this->contenu = $contenu;
+
+        return $this;
     }
 
     /**
-     * @return mixed
+     * Get contenu
+     *
+     * @return string
      */
-    public function getTexte()
+    public function getContenu()
     {
-        return $this->texte;
+        return $this->contenu;
     }
 
     /**
-     * @param mixed $texte
+     * Set imageUrl
+     *
+     * @param string $imageUrl
+     *
+     * @return News
      */
-    public function setTexte($texte)
+    public function setImageUrl($imageUrl)
     {
-        $this->texte = $texte;
+        $this->imageUrl = $imageUrl;
+
+        return $this;
     }
 
     /**
-     * @return mixed
+     * Get imageUrl
+     *
+     * @return string
      */
-    public function getHref()
+    public function getImageUrl()
     {
-        return $this->href;
+        return $this->imageUrl;
     }
 
     /**
-     * @param mixed $href
+     * Set datePublication
+     *
+     * @param \DateTime $datePublication
+     *
+     * @return News
      */
-    public function setHref($href)
+    public function setDatePublication($datePublication)
     {
-        $this->href = $href;
+        $this->datePublication = $datePublication;
+
+        return $this;
     }
 
+    /**
+     * Get datePublication
+     *
+     * @return \DateTime
+     */
+    public function getDatePublication()
+    {
+        return $this->datePublication;
+    }
 }
+

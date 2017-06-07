@@ -13,6 +13,7 @@ class NewsManager
 {
     public $imageSrc =
         [
+            'http://loremflickr.com/',
             'http://www.placecage.com/c/',
             'http://www.placecage.com/',
             'http://www.placecage.com/g/',
