@@ -5,10 +5,16 @@ namespace Birk\NewsBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Birk\NewsBundle\Entity\Generator;
+//use Birk\NewsBundle\Tools\Generator;
 use Symfony\Component\HttpFoundation\Request;
-
-
+//
+//redirect to route
+//join ou je ne sais quoi article et auteur? ->configuration dans le fichier directement)(2 ligne par document)
+//
+//
+//hydrate?-> NON
+//construct? -> new array collection ("creer un array vide pour les table liée" au cas ou il n'y en a pas)
+//  @var: arrayCollection ? what's that ?
 
 class NewsController extends Controller
 {
@@ -52,8 +58,9 @@ class NewsController extends Controller
      *
      */
     public function createNewstest(Request $request){
-        $generateur = new Generator();
-        $news = $generateur->createNews();
+        $news = [];
+        
+        //tt ceci est en pause en attente de voire les formulaires
 
         $doctrine = $this->getDoctrine();
 
@@ -63,11 +70,7 @@ class NewsController extends Controller
 
         $this->addFlash('notice','nouvelle news');
 
-        $repo = $doctrine->getRepository('BirkNewsBundle:News');
-        $allNews = $repo->findAll();
-        $content =$this
-            ->renderView('BirkNewsBundle:News:newsAll.html.twig',['news'=>$allNews]);
-        return new Response($content);
+        $this->redirectToRoute('home');
 
 
 

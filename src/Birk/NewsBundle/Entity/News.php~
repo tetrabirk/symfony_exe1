@@ -172,28 +172,5 @@ class News
     {
         return $this->datePublication;
     }
-
-    /**
-     * Set auteur
-     *
-     * @param \Birk\NewsBundle\Entity\Auteur $auteur
-     *
-     * @return News
-     */
-    public function setAuteur(\Birk\NewsBundle\Entity\Auteur $auteur = null)
-    {
-        $this->auteur = $auteur;
-
-        return $this;
-    }
-
-    /**
-     * Get auteur
-     *
-     * @return \Birk\NewsBundle\Entity\Auteur
-     */
-    public function getAuteur()
-    {
-        return $this->auteur;
-    }
 }
+
