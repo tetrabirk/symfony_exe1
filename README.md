@@ -11,12 +11,14 @@ petit descriptif de la situation:
 *là j'ai mis le fichier news.yml en commentaire (src/Birk/NewsBundle/Ressources/fixtures/orm/news.yml)
 *il y a seulement News et Auteur qui on été modifié pour être "lié" 
 *quand je fait la commande ci dessous , mes tables "auteur","categorie" et "image" sont correctement alimentée
+
     $ php bin/console hautelook:fixtures:load
 
 problème
 --------
 
 quand je "dé-commente" mon fichier news.yml sauf la dernière ligne
+
     #        auteur: '@auteur*'
 
 la console me retourne cette erreur ci
@@ -234,3 +236,5 @@ jusque là rien d'anormale, MAIS lorsque je décomente la dernière ligne aussi 
 ```
 
 je supose que j'ai mal fait quelque chose dans mon fichier news.yml ou dans mes fichier Entity et que ça à avoir avec le "JOIN" entre les objets mais je ne trouve pas/comprend pas 
+
+Merci d'avance
