@@ -1,0 +1,10 @@
+## YAML Template.
+---
+Birk\NewsBundle\Entity\News:
+    fake_news_{1..10}:
+        titre: <sentence(nb_words=6)>
+        contenu: <paragraph(nb_sentence=10)>
+        imageUrl: imageUrl(185, 185, 'cats')
+        datePublication: <dateTime()>
+        auteur: '@auteur*'
+       

@@ -1,0 +1,7 @@
+## YAML Template.
+---
+ 
+Birk\NewsBundle\Entity\Image:
+    fake_image_{1..10}:
+        titre: <slug()>
+        url: <imageUrl(50  , 50, 'cats')>

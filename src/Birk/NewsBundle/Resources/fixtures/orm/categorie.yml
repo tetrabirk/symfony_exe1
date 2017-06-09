@@ -1,0 +1,7 @@
+## YAML Template.
+---
+ 
+Birk\NewsBundle\Entity\Categorie:
+    fake_categorie_{1..10}:
+        nom: <sentence(3)>
+        slug: <slug()>

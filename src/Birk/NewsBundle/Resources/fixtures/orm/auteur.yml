@@ -1,0 +1,9 @@
+## YAML Template.
+---
+ 
+Birk\NewsBundle\Entity\Auteur:
+    fake_auteur_{1..10}:
+        nom: <lastname()>
+        prenom: <firstname()>
+        dateNaissance: <dateTimeBetween('-80 year','-15 year')>
+        bio: <paragraph(nb_sentence=5)>
