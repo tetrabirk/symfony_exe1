@@ -1,0 +1,58 @@
+php symfony new projectName
+
+cd .\projectName
+
+-----------------------------------------------------------------
+___________GIT___________________________________________________
+
+git init
+
+git add .
+
+git commit -m "first commit"
+
+git remote add origin https://github.com/tetrabirk/my_project.git
+
+git push -u origin master
+
+__________________________________________________________________
+------------------------------------------------------------------
+php bin/console server:run
+------------------------------------------------------------------
+
+
+php bin/console generate:bundle
+
+	yes
+	Birk/ProjectBundle
+	[ENTER]
+	[ENTER]	
+	annotation
+
+-----------------------------------------------------------------
+___________COMPOSER______________________________________________
+
+composer require fzaninotto/faker
+
+
+composer install
+
+__________________________________________________________________
+------------------------------------------------------------------
+
+
+php bin/console cache:clear
+-----------------------------------------------------------------
+___________DOCTRINE_________________________________________________
+
+
+
+php bin/console doctrine:database:create
+php bin/console doctrine:schema:create
+
+php bin/console doctrine:generate:entity
+php bin/console doctrine:schema:update
+
+-----------------------------------------------------------------
+___________DEBUG_________________________________________________
+php bin/console debug:router
