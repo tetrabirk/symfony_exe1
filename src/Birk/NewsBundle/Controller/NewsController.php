@@ -7,6 +7,10 @@ use Symfony\Component\HttpFoundation\Response;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 //use Birk\NewsBundle\Tools\Generator;
 use Symfony\Component\HttpFoundation\Request;
+use Birk\NewsBundle\Entity\News;
+use Birk\NewsBundle\Entity\Auteur;
+use DateTime;
+
 //
 //redirect to route
 //join ou je ne sais quoi article et auteur? ->configuration dans le fichier directement)(2 ligne par document)
@@ -58,10 +62,18 @@ class NewsController extends Controller
      *
      */
     public function createNewstest(Request $request){
-        $news = [];
+        $news = new News();
+        $news->setContenu("hohoho c'est t'y pas un bel article que voila");
+        $news->setDatePublication(new Datetime);
+        $news->setImageUrl('http://lorempixel.com/185/185/cats/');
+        $news->setTitre('ceci est un titre');
+        $auteur = new Auteur();
+        $auteur->setNom('Boberson');
+        $auteur->setPrenom('Bob');
+        $auteur->setDateNaissance(new Datetime);
+        $auteur->setBio('lol comme on dit');
+        $news->setAuteur($auteur);
         
-        //tt ceci est en pause en attente de voire les formulaires
-
         $doctrine = $this->getDoctrine();
 
         $em=$doctrine->getManager();
@@ -70,7 +82,7 @@ class NewsController extends Controller
 
         $this->addFlash('notice','nouvelle news');
 
-        $this->redirectToRoute('home');
+        return $this->redirectToRoute('birk_news_news_home');
 
 
 

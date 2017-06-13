@@ -53,7 +53,8 @@ class News
     /**
      * @var string
      * 
-     * @ORM\ManyToOne(targetEntity="\Birk\NewsBundle\Entity\Auteur", inversedBy="auteur")
+     * @ORM\ManyToOne(targetEntity="\Birk\NewsBundle\Entity\Auteur", inversedBy="auteur", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=true)
      */
     private $auteur;
 

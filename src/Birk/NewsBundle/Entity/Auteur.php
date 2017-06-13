@@ -25,21 +25,21 @@ class Auteur
     /**
      * @var string
      *
-     * @ORM\Column(name="nom", type="string", length=255)
+     * @ORM\Column(name="nom", type="string", length=255, nullable=true)
      */
     private $nom;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="prenom", type="string", length=255)
+     * @ORM\Column(name="prenom", type="string", length=255, nullable=true)
      */
     private $prenom;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date_naissance", type="datetime")
+     * @ORM\Column(name="date_naissance", type="datetime", nullable=true)
      */
     private $dateNaissance;
 
