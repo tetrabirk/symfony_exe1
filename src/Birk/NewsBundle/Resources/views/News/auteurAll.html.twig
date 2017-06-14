@@ -1,0 +1,15 @@
+{% extends "@BirkNews/home.html.twig" %}
+
+{% block content %}
+
+    {% for a in auteur %}
+        <div id="auteur">
+
+            <h2>{{ a.prenom|capitalize }} {{ a.nom|upper }}</h2>
+            <p>{{ a.dateNaissance|date('d/m/y') }}</p>
+            <p>{{ a.bio }}</p>
+            <a href="{{ path('birk_news_auteur_auteurdetail')~'/'~a.id}}">en savoir plus</a>
+        </div>
+    {% endfor %}
+
+{% endblock %}

@@ -6,4 +6,4 @@ Birk\NewsBundle\Entity\Auteur:
         nom: <lastname()>
         prenom: <firstname()>
         dateNaissance: <dateTimeBetween('-80 year','-15 year')>
-        bio: <paragraph(nb_sentence=5)>
+        bio: <paragraph(5)>

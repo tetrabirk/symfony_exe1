@@ -32,7 +32,7 @@ class AuteurController extends Controller
      * requirements={'id':"\d+"}
      */
 
-    public function newsDetailAction($id=0){
+    public function auteurDetailAction($id=0){
         if ($id!==0){
             $doctrine = $this->getDoctrine();
             $repo = $doctrine->getRepository('BirkNewsBundle:Auteur');

@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62126f82-45ae-455f-8813-92fe684eb532" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Birk/NewsBundle/Resources/views/News/auteurAll.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Birk/NewsBundle/Resources/views/News/auteurOne.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/memo_symfony.txt" afterPath="$PROJECT_DIR$/memo_symfony.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Birk/NewsBundle/Controller/AuteurController.php" afterPath="$PROJECT_DIR$/src/Birk/NewsBundle/Controller/AuteurController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Birk/NewsBundle/Resources/fixtures/orm/auteur.yml" afterPath="$PROJECT_DIR$/src/Birk/NewsBundle/Resources/fixtures/orm/auteur.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Birk/NewsBundle/Resources/fixtures/orm/news.yml" afterPath="$PROJECT_DIR$/src/Birk/NewsBundle/Resources/fixtures/orm/news.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +20,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -41,7 +48,6 @@
         <option value="$PROJECT_DIR$/src/Birk/NewsBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/Birk/NewsBundle/Resources/views/News/base.html.twig" />
-        <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/src/Birk/NewsBundle/Manager/NewsManager.php" />
         <option value="$PROJECT_DIR$/src/Birk/NewsBundle/temp/NewsManager.php" />
         <option value="$PROJECT_DIR$/src/Birk/NewsBundle/temp/News.php" />
@@ -49,10 +55,15 @@
         <option value="$PROJECT_DIR$/src/Birk/NewsBundle/Resources/views/News/newsAll.html.twig" />
         <option value="$PROJECT_DIR$/src/Birk/NewsBundle/Controller/NewsController.php" />
         <option value="$PROJECT_DIR$/src/Birk/NewsBundle/Resources/views/News/newsOne.html.twig" />
-        <option value="$PROJECT_DIR$/src/Birk/NewsBundle/Controller/AuteurController.php" />
         <option value="$PROJECT_DIR$/src/Birk/NewsBundle/Entity/Generator.php" />
         <option value="$PROJECT_DIR$/src/Birk/NewsBundle/Entity/Auteur.php" />
         <option value="$PROJECT_DIR$/src/Birk/NewsBundle/Entity/News.php" />
+        <option value="$PROJECT_DIR$/web/css/style.css" />
+        <option value="$PROJECT_DIR$/src/Birk/NewsBundle/Resources/fixtures/orm/auteur.yml" />
+        <option value="$PROJECT_DIR$/src/Birk/NewsBundle/Controller/AuteurController.php" />
+        <option value="$PROJECT_DIR$/src/Birk/NewsBundle/Resources/views/News/auteurAll.html.twig" />
+        <option value="$PROJECT_DIR$/src/Birk/NewsBundle/Resources/views/News/auteurOne.html.twig" />
+        <option value="$PROJECT_DIR$/src/Birk/NewsBundle/Resources/fixtures/orm/news.yml" />
       </list>
     </option>
   </component>
@@ -253,6 +264,40 @@
               <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fixtures" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orm" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exercice_1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exercice_1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Birk" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewsBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -374,15 +419,15 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\DATA\GitHub\exercice_1\src\Birk\NewsBundle\Resources\views\News" />
+      <recent name="E:\DATA\GitHub\exercice_1\src\Birk\NewsBundle\Controller" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\DATA\GitHub\exercice_1\src\Birk\NewsBundle\Entity" />
       <recent name="E:\DATA\GitHub\exercice_1\src\Birk\NewsBundle\temp" />
       <recent name="E:\DATA\GitHub\exercice_1\src\Birk\NewsBundle\Resources\views\News" />
       <recent name="E:\DATA\GitHub\exercice_1\web\css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\DATA\GitHub\exercice_1\src\Birk\NewsBundle\Controller" />
-      <recent name="E:\DATA\GitHub\exercice_1\src\Birk\NewsBundle\Resources\views\News" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -483,17 +528,17 @@
       <workItem from="1496663650667" duration="14315000" />
       <workItem from="1496849984738" duration="299000" />
       <workItem from="1496852213322" duration="11778000" />
-      <workItem from="1497455821290" duration="16000" />
+      <workItem from="1497455821290" duration="2501000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32164000" />
+    <option name="totallyTimeSpent" value="34649000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16354166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16354166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -523,51 +568,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../ISL_2016_2017/POO_FrameWork/2017_03_07_exe_composer_namespace_autoloading/src/Entity/Personne.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="34" lean-forward="false" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ISL_2016_2017/POO_FrameWork/2017_03_07_exe_composer_namespace_autoloading/src/Manager/EnseignantManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ISL_2016_2017/POO_FrameWork/2017_03_07_exe_composer_namespace_autoloading/src/Manager/EntityManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Birk/NewsBundle/Resources/views/News/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Birk/NewsBundle/Controller/NewsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding>
-            <element signature="e#46#103#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Birk/NewsBundle/Resources/views/News/home.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -603,6 +603,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -768,13 +769,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Birk/NewsBundle/Repository/NewsRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -813,22 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Birk/NewsBundle/Resources/views/News/newsAll.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="87" lean-forward="false" selection-start-line="9" selection-start-column="87" selection-end-line="9" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Birk/NewsBundle/Resources/views/News/newsOne.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../intro_symfony/src/AppBundle/Entity/Artist.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -863,14 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Birk/NewsBundle/Controller/AuteurController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Birk/NewsBundle/Entity/Generator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="519">
@@ -879,13 +849,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../intro_symfony/src/AppBundle/Controller/JazzIndex/AlbumController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="859">
+          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Birk/NewsBundle/Entity/Auteur.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="28" column="7" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-          <folding>
-            <element signature="e#42#90#0#PHP" expanded="false" />
-          </folding>
+        <state relative-caret-position="-1105">
+          <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Birk/NewsBundle/Resources/fixtures/orm/image.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Birk/NewsBundle/Resources/fixtures/orm/categorie.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Birk/NewsBundle/Resources/views/News/newsAll.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="87" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="87" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -900,10 +908,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../intro_symfony/src/AppBundle/Controller/JazzIndex/AlbumController.php">
+    <entry file="file://$PROJECT_DIR$/src/Birk/NewsBundle/Controller/AuteurController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="859">
-          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        <state relative-caret-position="341">
+          <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Birk/NewsBundle/Resources/fixtures/orm/auteur.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Birk/NewsBundle/Resources/views/News/auteurAll.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="14" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="11" selection-end-column="14" />
+          <folding>
+            <marker date="1497457872278" expanded="true" signature="42:407" ph="{% block content ...%}" />
+            <marker date="1497457872278" expanded="true" signature="67:391" ph="{% for a in auteur ...%}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Birk/NewsBundle/Resources/views/News/newsOne.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Birk/NewsBundle/Resources/views/News/auteurOne.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Birk/NewsBundle/Resources/fixtures/orm/news.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding />
         </state>
       </provider>
