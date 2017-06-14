@@ -51,16 +51,17 @@ class News
     private $datePublication;
 
     /**
-     * @var ArrayCollection
+     * @var string
      * 
-     * @ORM\ManyToOne(targetEntity="\Birk\NewsBundle\Entity\Auteur", inversedBy="auteur")
+     * @ORM\ManyToOne(targetEntity="\Birk\NewsBundle\Entity\Auteur", inversedBy="news", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=true)
      */
     private $auteur;
 
     
     
     public function __construct(){
-        $this->auteur = new ArrayCollection();
+        $this->auteur = new Auteur();
     }
     
     /**
