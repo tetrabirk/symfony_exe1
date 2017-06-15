@@ -6,7 +6,6 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Birk\NewsBundle\Entity\Generator;
-use Symfony\Component\HttpFoundation\Request;
 
 
 
@@ -51,7 +50,7 @@ class AuteurController extends Controller
      * name="addauteurtest"
      *
      */
-    public function creatAuteurtest(Request $request){
+    public function creatAuteurtest(){
         $generateur = new Generator();
         $auteur = $generateur->createAuteur();
 
@@ -63,7 +62,6 @@ class AuteurController extends Controller
 
         $this->addFlash('notice','nouvel auteur');
 
-//comment faire pour rediriger vers une autre route à partir d'ici????
 
         $repo = $doctrine->getRepository('BirkNewsBundle:Auteur');
         $allAuteur = $repo->findAll();

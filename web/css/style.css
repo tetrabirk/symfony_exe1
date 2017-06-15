@@ -44,7 +44,7 @@ main{
 #news a, #auteur a{
     color: orange;
 }
-#news h2, , #news1 h2, #auteur h2, #auteur1 h2{
+#news h2, #news1 h2, #auteur h2, #auteur1 h2{
     font-weight: bold;
     font-size: 14px;
 }
@@ -55,7 +55,7 @@ main{
 
 }
 #news1 img, #auteur1 img{
-    width: 370;
+    width: 370px;
     height: 370px;
 
 }

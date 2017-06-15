@@ -15,6 +15,13 @@ git remote add origin https://github.com/tetrabirk/my_project.git
 
 git push -u origin master
 
+ou
+
+git clone https://github.com/tetrabirk/my_project.git mondossier
+
+git remote set-url origin https://github.com/tetrabirk/my_project2.git
+
+
 __________________________________________________________________
 ------------------------------------------------------------------
 php bin/console server:run
@@ -47,11 +54,13 @@ ___________DOCTRINE_________________________________________________
 
 
 
+php bin/console doctrine:database:drop --force
 php bin/console doctrine:database:create
 php bin/console doctrine:schema:create
 
 php bin/console doctrine:generate:entity
-php bin/console doctrine:schema:update
+php bin/console doctrine:generate:entities
+php bin/console doctrine:schema:update --force
 
 -----------------------------------------------------------------
 ___________DEBUG_________________________________________________
